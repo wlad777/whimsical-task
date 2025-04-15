@@ -1,0 +1,8 @@
+{:source-paths ["src"]
+ :nrepl {:port 9000}
+ :dependencies [[binaryage/devtools "1.0.7"]
+                [cljs-http/cljs-http "0.1.48"]]
+ :builds {:app {:target :browser
+                :modules {:main {:init-fn app.core/init}}
+                :devtools {:http-root "public"
+                           :http-port 3000}}}}
